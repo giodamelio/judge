@@ -11,7 +11,6 @@
   ])
 
 (declare-source
-  :prefix "judge"
   :source [
     "src/fmt.janet"
     "src/shared.janet"
@@ -24,3 +23,7 @@
 
 (declare-binscript :main "src/judge"
   :hardcode-syspath true)
+
+(declare-executable 
+  :name "judge"
+  :entry "src/judge.janet")
